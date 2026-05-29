@@ -1309,18 +1309,18 @@ export default function ServicesPage() {
 
                 {/* Visibility signals (GEO only) */}
                 {service.visibilitySignals && (
-                  <div className="mt-8 p-6 rounded-2xl bg-[#113256]/5 border border-[#113256]/10">
-                    <h4 className="text-[0.82rem] font-bold uppercase tracking-wider text-[#113256] mb-4 flex items-center gap-2">
-                      <Cpu className="w-4 h-4 text-[#3a7fc1]" />
+                  <div className="mt-8 p-6 rounded-2xl bg-[#16365A] border border-white/5">
+                    <h4 className="text-[0.82rem] font-bold uppercase tracking-wider text-white mb-4 flex items-center gap-2">
+                      <Cpu className="w-4 h-4 text-[#7bafd4]" />
                       We optimise all 9 core AI visibility signals
                     </h4>
                     <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-2">
                       {service.visibilitySignals.map((sig, i) => (
                         <div
                           key={i}
-                          className="feature-card text-center p-2.5 rounded-xl bg-[#163658] border border-white/10 min-h-[52px] flex items-center justify-center"
+                          className="feature-card text-center p-2.5 rounded-xl bg-white min-h-[52px] flex items-center justify-center"
                         >
-                          <span className="text-[0.7rem] font-bold text-white leading-tight">
+                          <span className="text-[0.7rem] font-bold text-[#16365A] leading-tight">
                             {sig}
                           </span>
                         </div>
@@ -1399,21 +1399,21 @@ export default function ServicesPage() {
                     ].map((item, i) => (
                       <div
                         key={i}
-                        className="feature-card group relative flex gap-4 p-5 rounded-2xl bg-[#3a7fc1]/10 border border-white/10 hover:bg-[#3a7fc1]/20 hover:border-[#3a7fc1]/40 transition-all duration-300 shadow-[0_8px_30px_rgba(58,127,193,0.12)] backdrop-blur-sm"
+                        className="feature-card relative flex gap-4 p-5 rounded-2xl bg-white border border-[#e5e9ef] transition-all duration-300 shadow-[0_8px_30px_rgba(0,0,0,0.05)] cursor-pointer"
                       >
                         {item.tag && (
-                          <span className="absolute top-2 right-2 text-[0.55rem] font-bold uppercase tracking-wider bg-[#3a7fc1]/20 text-[#7bafd4] border border-[#3a7fc1]/30 px-2 py-0.5 rounded-full">
+                          <span className="absolute top-2 right-2 text-[0.55rem] font-bold uppercase tracking-wider bg-[#1A3E63]/10 text-[#1A3E63] border border-[#1A3E63]/20 px-2 py-0.5 rounded-full">
                             {item.tag}
                           </span>
                         )}
-                        <div className="w-10 h-10 rounded-xl bg-white/5 text-[#7bafd4] group-hover:bg-white group-hover:text-[#163658] transition-all duration-300 flex items-center justify-center flex-shrink-0">
+                        <div className="w-10 h-10 rounded-xl bg-[#1A3E63]/5 text-[#1A3E63] flex items-center justify-center flex-shrink-0">
                           {item.icon}
                         </div>
                         <div>
-                          <p className="text-[0.88rem] font-bold text-white mb-0.5 group-hover:text-[#7bafd4] transition-colors duration-200">
+                          <p className="text-[0.88rem] font-bold text-[#1A3E63] mb-0.5">
                             {item.label}
                           </p>
-                          <p className="text-[0.75rem] font-light text-slate-300 leading-relaxed group-hover:text-white/80 transition-colors duration-200">
+                          <p className="text-[0.75rem] font-light text-[#1A3E63]/80 leading-relaxed">
                             {item.desc}
                           </p>
                         </div>
